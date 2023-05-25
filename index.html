@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katik</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="asset/Letter-K-PNG-Royalty-Free-High-Quality.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <span class="title">Katik</span> <span class="sub-title">Kalkulator Matematik</span>
+    </header>
+    <main>
+        <div class="welcome">
+            <h2>KATIK</h2>
+            <p>Hey everyone, welcome to KATIK - Kalkulator Matematik!<br>A simple website meant to calculate the area and perimeter of a square.</p>
+        </div>
+        
+        <div class="card">
+            <div class="card-name"><h2>Luas Persegi</h2></div>
+            <div class="example-square mid"></div>
+            <div class="formula-description">
+                <p>Rumus Luas Persegi yaitu:</p>
+                <span>L = S x S</span>
+                <p>Dimana:</p>
+                <p> L = Luas</p>
+                <p>S = Sisi</p>
+            </div>
+            <hr>
+            <div class="kolom-result">
+                <h3>Hitung Luas Persegi</h3>
+                <input type="number" id="sisi-luas" name="sisi-luas" placeholder="Please insert a valid number" required>
+                <div id="inner-luas" class="inner"></div>
+                <button type="submit" class="hitung mid" onclick="hitungLuas()">Hitung</button>
+            </div>
+            <button id="reset-luas" class="reset" onclick="resetLuas()">reset</button>
+            <div class="clear"></div>
+
+        </div>
+        <div class="card">
+            <div class="card-name"><h2>Keliling Persegi</h2></div>
+            <div class="example-square mid"></div>
+            <div class="formula-description">
+                <p>Rumus Luas Persegi yaitu:</p>
+                <span>K = 4 x S</span>
+                <p>Dimana:</p>
+                <p> K = Keliling</p>
+                <p>S = Sisi</p>
+            </div>
+            <hr>
+            <div class="kolom-result">
+                <h3>Hitung Keliling Persegi</h3>
+                <input type="number" id="sisi-keliling" name="sisi-keliling" placeholder="Please insert a valid number" required>
+                <div id="inner-keliling" class="inner"></div>
+                <button type="submit" class="hitung mid" onclick="hitungKeliling()">Hitung</button>
+            </div>
+            <button id="reset-keliling" class="reset" onclick="resetKeliling()">reset</button>
+            <div class="clear"></div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
